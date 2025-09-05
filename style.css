@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;     
+  padding: 0;      
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 0;
+  font-family: 'Titillium Web', Arial, Verdana, sans-serif;
+  color: #fff;
+  background-color: #000000;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  font-size: smaller;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: black;
+  z-index: 1000;
+}
+
+/* Align nav links */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #aaa;
+}
+
+.dropdown{
+  padding: 4px 15px;
+}
+.nav-links .dropdown {
+      border: 0.2px solid white;
+}
+
+
+
+/*Dropdown for Launches*/
+.dropdown-launch:hover .dropdown-menu {
+  display: flex;
+}
+
+
+
+
+/* Dropdown */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0,0,0,0.9);
+  padding: 10px 0;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+  border: 1px solid white;
+  margin-top: 10px;
+}
+
+.dropdown-menu li {
+  padding: 8px 15px;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 0.85rem;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* fix dropdown hower */
+
+
+/* ===== HERO SECTIONS ===== */
+ .hero {
+  margin-top: 0%;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+  padding-top: 80px;
+  padding: 0 5%;
+}
+
+
+/* Video background */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;                /* stretch full width */
+  height: 100%;               /* stretch full height */
+  object-fit: cover;          /* keeps aspect ratio, crops overflow */
+  z-index: -1;                /* push video behind content */
+}
+
+/* Content inside hero */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-content p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.hero-content .btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero-content .btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Image background */
+.hero-image {
+  background-size: cover;
+  background-position: center;
+}
+
+/*Alligning items in hero section*/
+/* Content container */
+#hero1 {
+  margin-top: 80px;
+}
+
+.hero-content, .hero1-content {
+  max-width: auto;
+}
+
+/* Alternating alignment */
+.hero:nth-child(even) .hero-content,
+.hero:nth-child(even) .hero-content {
+  text-align: left;
+  margin-right: auto;
+}
+
+.hero:nth-child(odd) .hero-content {
+  text-align: right;
+  margin-left: auto;
+}
+
+/* Headings */
+.hero-content h1 {
+  font-size: 45px; 
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+/* Subheading / paragraph */
+.hero-content p {
+  margin-top: 15px;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  max-width: 800px;  /* keeps text from stretching too wide */
+}
+
+/* Buttons */
+.hero-content button {
+  margin-top: 25px;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hero-content button:hover {
+  background: #ffffff;
+  color: #000000;
+  transform: scale(1.05);
+  border-radius: 5px;
+}
+
+
+/* Hero 2 Secion */
+
+/* Hero 2 specific content */
+#hero2 .hero-content {
+  color: #000; /* black text for better contrast */
+}
+
+#hero2 .hero-content h1,
+#hero2 .hero-content p {
+  color: #000; /* ensures headings and paragraphs are black */
+}
+
+/* Hero 2 button */
+#hero2 .hero-content button {
+  color: #000;              /* black text */
+  background: rgba(255, 255, 255, 0.8); /* light transparent button background */
+  border: 0.2 px solid #000;   /* black border */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hero 2 button hover */
+#hero2 .hero-content button:hover {
+  background: #000;  /* black background on hover */
+  color: #fff;       /* white text on hover */
+}
+
+
+
+/* Hero 3 Section */
+
+#hero3 {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* adjust content positioning */
+  overflow: hidden;
+}
+
+/* Subtle black gradient overlay on the left */
+#hero3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px; /* width of the fade */
+  height: 100%;
+  background: linear-gradient(
+    to right,          /* horizontal gradient */
+    rgba(0, 0, 0, 0.8), /* slightly black on the left */
+    rgba(0, 0, 0, 0)    /* transparent toward right */
+  );
+  z-index: 2; /* above video, below content */
+  pointer-events: none; /* clicks pass through */
+}
+
+
+/* Hero 5 Section */
+#hero5 {
+  display: flex;
+  padding-bottom: 150px;
+  flex-direction: column;      /* stack content and footer */
+  justify-content: flex-end;   /* push footer to bottom */
+  min-height: 100vh;           /* full viewport height */
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden; 
+}
+
+/* Subtle black gradient overlay at bottom */
+#hero5::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* height of the gradient fade */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),   /* transparent at top */
+    rgba(0, 0, 0, 1.2)  /* slightly black at bottom */
+  );
+  z-index: 2; /* above video, below content */
+  pointer-events: none; /* lets clicks pass through */
+}
+
+.hero-content {
+  z-index: 1;
+  text-align: left;            /* align content left for Hero5 */
+  max-width: 600px;            /* optional: control width of text */
+  margin-bottom: 20px;         /* space above footer */
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  width: 100%;                 
+  text-align: center;
+  padding: 25px 20px;           /* vertical and horizontal padding */
+  display: flex;
+  flex-direction: row;       /* stack nav and copyright */
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  background: linear-gradient(
+    to top,                     /* gradient moves from bottom to top */
+    rgba(0, 0, 0, 1),           /* fully black at bottom */
+    rgba(0, 0, 0, 0)            /* fully transparent at top */
+  );
+  z-index: 1;
+  position: relative;          /* stays inside hero5 */
+}
+
+/* Footer navigation links */
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;          
+}
+
+.footer-nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.footer-nav li a:hover {
+  color: #aaa;
+}
+
+/* Footer copyright text */
+.footer p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 0;
+}
+
+
+/* Media Queries */
+
+
